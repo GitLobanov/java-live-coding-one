@@ -3,7 +3,7 @@ package by.lobanov.training.ru.core;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TC1_ru_MobileOperator {
+public class TC1_ru_MobileOperator_Tinkoff {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
