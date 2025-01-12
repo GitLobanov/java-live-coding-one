@@ -4,14 +4,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- *
  * Пример 1
  * Input
  * n t 5  5 количество сотрудников и время, когда один из сотрудников покинет офис (в минутах)
  * employees 1  4  9  16  25 номера этажей, на которых находятся сотрудники
  * s(t) 2 номер сотрудника, который уйдет через t минут.
  * Output
- * 24
+ * 24 - количество пролетов нужно пройти
  */
 public class TC3_ru_FlightsOfStairs_Tinkoff {
 
@@ -25,14 +24,14 @@ public class TC3_ru_FlightsOfStairs_Tinkoff {
         System.out.println(res);
     }
 
-    public static int calculateNumberOfStairs (int [] nt, int [] employees, int numberOfEmployeeWhoFirstGoOff) {
+    public static int calculateNumberOfStairs(int[] nt, int[] employees, int numberOfEmployeeWhoFirstGoOff) {
         int timeWhenFirstEmployeeGoOff = nt[1];
-        int floorOfEmployeeThatFirstGoOff = employees[numberOfEmployeeWhoFirstGoOff-1];
+        int floorOfEmployeeThatFirstGoOff = employees[numberOfEmployeeWhoFirstGoOff - 1];
         int floorWhereKatya = 0;
         int floorsThatKatyaGoThought = 0;
-        if (timeWhenFirstEmployeeGoOff < floorOfEmployeeThatFirstGoOff) {
+        if (timeWhenFirstEmployeeGoOff <= floorOfEmployeeThatFirstGoOff) {
             floorWhereKatya = floorOfEmployeeThatFirstGoOff;
-            employees[numberOfEmployeeWhoFirstGoOff-1] = 0;
+            employees[numberOfEmployeeWhoFirstGoOff - 1] = 0;
         } else {
             floorWhereKatya = employees[0];
             employees[0] = 0;
