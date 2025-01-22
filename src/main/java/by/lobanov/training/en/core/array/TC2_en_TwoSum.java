@@ -18,7 +18,7 @@ import java.util.Arrays;
  * Input: nums = [3,2,4], target = 6
  * Output: [1,2]
  */
-public class TC1_en_TwoSum {
+public class TC2_en_TwoSum {
 
     public static void main(String[] args) {
         int [] arr = Arrays.stream("2,7,11,15".split(",")).mapToInt(Integer::parseInt).toArray();
