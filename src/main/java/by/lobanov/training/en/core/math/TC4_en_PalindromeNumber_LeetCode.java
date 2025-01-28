@@ -25,6 +25,10 @@ public class TC4_en_PalindromeNumber_LeetCode {
     }
 
     public static boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
+
         String strOrigin = String.valueOf(x);
         String strReversed = new StringBuilder(strOrigin).reverse().toString();
         return strReversed.equals(strOrigin);
