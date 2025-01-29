@@ -57,6 +57,7 @@ public class TC5_en_RomanToInteger_Leetcode {
     }
 
     // iteration from end
+    // "MCMXCIV"
     private static int romanToInt(String s) {
         StringBuilder str = new StringBuilder(s);
         str.reverse();
