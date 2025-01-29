@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.core;
+package by.lobanov.training.ru.core.math;
 
 import java.io.BufferedReader;
 import java.io.IOException;

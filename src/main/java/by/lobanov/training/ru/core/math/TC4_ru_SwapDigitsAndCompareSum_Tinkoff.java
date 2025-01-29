@@ -1,8 +1,7 @@
-package by.lobanov.training.ru.core;
+package by.lobanov.training.ru.core.math;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class TC4_ru_SwapDigitsAndCompareSum_Tinkoff {
 

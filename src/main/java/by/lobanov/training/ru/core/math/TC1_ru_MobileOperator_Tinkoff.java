@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.core;
+package by.lobanov.training.ru.core.math;
 
 import java.util.Arrays;
 import java.util.Scanner;
