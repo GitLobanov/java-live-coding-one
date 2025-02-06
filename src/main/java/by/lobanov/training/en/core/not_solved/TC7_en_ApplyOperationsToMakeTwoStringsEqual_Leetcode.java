@@ -1,6 +1,7 @@
-package by.lobanov.training.en.core.dynamic;
+package by.lobanov.training.en.core.not_solved;
 
 /**
+ * Topics: Dynamic
  * Difficulty: Medium
  * <br>
  * You are given two 0-indexed binary strings s1 and s2, both of length n, and a positive integer x.
@@ -26,7 +27,7 @@ package by.lobanov.training.en.core.dynamic;
  * <br>
  * Explanation: It is not possible to make the two strings equal.
  */
-public class TC5_en_ApplyOperationsToMakeTwoStringsEqual_Leetcode {
+public class TC7_en_ApplyOperationsToMakeTwoStringsEqual_Leetcode {
 
 
 }
