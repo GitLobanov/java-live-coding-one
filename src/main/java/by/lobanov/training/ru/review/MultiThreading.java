@@ -1,5 +1,6 @@
-package by.lobanov.training.demos.demo10;
+package by.lobanov.training.ru.review;
 
+// что выведется в консоль
 public class MultiThreading {
 
     private static class MyThread extends Thread {
@@ -17,8 +18,7 @@ public class MultiThreading {
         myThread.run();
         myThread.run();
         myThread.start();
-        myThread.start();
+        myThread.run();
     }
 
-    // что выведится в консоль
 }

@@ -1,6 +1,4 @@
-package by.lobanov.training.demos.demo10;
-
-import lombok.extern.slf4j.Slf4j;
+package by.lobanov.training.ru.review;
 
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -8,22 +6,6 @@ import java.util.stream.Stream;
 public class LC12 {
 
     public static void main(String[] args) {
-
-        IntStream.range(0,10)
-                .boxed()
-                .map(i -> {
-                    String word;
-                    try {
-                        word = "word";
-                    } catch (Exception e) {
-                        System.out.println("error in parsing: " + e.getMessage());
-                        throw new RuntimeException(e);
-                    }
-                    return word;
-                })
-                .filter(word -> !word.isBlank())
-                .limit(10)
-                .forEach(System.out::println);
 
 //        foo();
 
@@ -35,7 +17,7 @@ public class LC12 {
                 .map(x -> x * x)
                 .forEach(x -> System.out.format("after map: %d%n", x));
 
-        // 0 0 0 3 3 9 0 0 5 5 25
+        //
     }
 
     static void foo() {
@@ -44,7 +26,7 @@ public class LC12 {
         bar(m);
         System.out.print(m);
     }
-    // Hello Hello World!
+    //
 
     static void bar(String m) {
         m += " World!";

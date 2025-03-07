@@ -1,10 +1,6 @@
-package by.lobanov.training.ru.review.alfa;
+package by.lobanov.training.ru.review;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Component;
-
-public class R1_CachedPhotoService {
+public class CachedPhotoService {
 /*
     @Component
     public final class CachedPhotoService {
