@@ -16,5 +16,4 @@ public class LC24 {
                 .distinct()
                 .count();
     }
-
 }
