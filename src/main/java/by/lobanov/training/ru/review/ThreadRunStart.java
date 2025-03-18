@@ -1,7 +1,7 @@
 package by.lobanov.training.ru.review;
 
 // что выведется в консоль
-public class MultiThreading {
+public class ThreadRunStart {
 
     private static class MyThread extends Thread {
         public MyThread(String name) {
