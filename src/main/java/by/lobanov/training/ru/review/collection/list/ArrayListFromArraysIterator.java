@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.review;
+package by.lobanov.training.ru.review.collection.list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.ListIterator;
 public class ArrayListFromArraysIterator {
 
     public static void main(String[] args) {
-//        v1();
+        v1();
 //        v2();
 //        v3();
     }

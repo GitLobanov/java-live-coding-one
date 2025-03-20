@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.review;
+package by.lobanov.training.ru.review.multithreading;
 
 import java.util.concurrent.TimeUnit;
 

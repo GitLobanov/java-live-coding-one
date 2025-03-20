@@ -1,0 +1,101 @@
+/**
+API поиска книг авторов и их книг по имени автора
+Также компонент при каждом поиске обновляет статистику по частоте использования поисковой строки(сбрасывается раз в сутки другой системой)
+При обнаружении популярного запроса (> 1000 запросов в сутки), по которому находится много авторов, отправляется алерт
+Алерт должен отправляться не более 1 раза за сутки для каждого автора
+Все классы на самом деле находятся в разных файлах, однако здесь представлены в одном месте для удобства
+*/
+@RestController
+public class AuthorController {
+
+    @Autowired
+    private AuthorSearchService service;
+
+    @GetMapping("/authors")
+    public List<AuthorDto> readAllAuthors(@RequestParam String query) {
+        List<Author> authors = service.search(query);
+        return authors.stream().map(el -> {
+            return new Mapper().map(el);
+        }).collect(Collectors.toList());
+    }
+}
+
+
+@Component
+public class AuthorSearchService {
+
+    @Autowired
+    private AuthorRepository authorRepository;
+
+    @Autowired
+    private StatisticsRepository statisticsRepository;
+
+    private AlertRestClient arc = new AlertRestClient;
+
+    @Transactional
+    public List<Author> search(String query) {
+        List<Author> author = authorRepository.findByNameContainingIgnoreCase(query);
+        Statistics s = statisticsRepository.findById(query).orElse(null);
+        if(s==null) s = new Statistics(query);
+        s.setNumbers(s.getNumbers() + 1);
+        statisticsRepository.save(s);
+
+        if(s.getNumbers() > 1000 && authors.size() > 1000) {
+            System.out.println("too popular with too much data, sending an alert...");
+            arc.send(query, s.getNumbers(), authors.size());
+        }
+        return author;
+    }
+}
+
+
+public interface AuthorsRepository extends CrudRepository<Author, Long> {
+    List<Author> findByNameContainingIgnoreCase(String name);
+}
+
+
+@Data
+@Entity
+public class Author {
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    private String name;
+
+    @OneToMany(mappedBy = "author")
+    private List<Book> books;
+
+    public Author(String name){
+        this.name = name;
+    }
+}
+
+
+@Data
+@Entity
+public class Statistics {
+    @Id
+    private String query;
+
+    private int numbers;
+
+    public Statistics(String query){
+        this.query = query;
+    }
+}
+
+
+@Data
+public class AuthorDto {
+    private Long id;
+    private String name;
+    private List<Book> books;
+}
+
+@Data
+@Entity
+public class Book {
+    private Long id;
+    private String name;
+}

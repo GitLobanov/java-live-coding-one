@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.review;
+package by.lobanov.training.ru.review.exception;
 
 // Какая ошибка выведется в консоль?
 // * Как сделать выброс 1 ошибки без изменения кода

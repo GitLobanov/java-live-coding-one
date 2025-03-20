@@ -1,6 +1,4 @@
-package by.lobanov.training.ru.review;
-
-import java.util.Arrays;
+package by.lobanov.training.ru.review.exception;
 
 /**
  * Нужно понять как лучше обратать ошибку в

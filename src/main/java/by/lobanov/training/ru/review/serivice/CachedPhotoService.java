@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.review;
+package by.lobanov.training.ru.review.serivice;
 
 public class CachedPhotoService {
 /*

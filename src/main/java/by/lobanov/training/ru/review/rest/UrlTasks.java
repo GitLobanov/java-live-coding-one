@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.review;
+package by.lobanov.training.ru.review.rest;
 
 public class UrlTasks {
 

@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.review;
+package by.lobanov.training.ru.review.collection.map;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.review;
+package by.lobanov.training.ru.review.multithreading;
 
 // что выведется в консоль
 public class ThreadRunStart {
@@ -14,11 +14,11 @@ public class ThreadRunStart {
     }
     public static void main(String[] args) {
         MyThread myThread = new MyThread("myThread");
-        myThread.start();
-        myThread.run();
-        myThread.run();
-        myThread.start();
-        myThread.run();
+//        myThread.start();
+//        myThread.run();
+//        myThread.run();
+//        myThread.start();
+//        myThread.run();
     }
 
 }

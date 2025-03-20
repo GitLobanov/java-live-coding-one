@@ -1,7 +1,6 @@
-package by.lobanov.training.ru.review;
+package by.lobanov.training.ru.review.generics;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class PecsWildcard {

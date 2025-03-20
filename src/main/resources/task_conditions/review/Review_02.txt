@@ -1,40 +1,22 @@
 1. Написать URL api, которое выдаёт перечень всех кредитов пользователя            
 2. Написать URL api для получения деталей конкретного кредита            
 3. Написать URL api с фильтрацией кредита по типу кредита + по дате гашения            
-4. Написать URL api для получения пени для конкретного кредита            
-
-
-api/v1/credits/user/{user_id}
-api/v1/credits/{credit_id}
-api/v1/credits/?type=&date=
-api/v1/credits/peny/{credit_id}
+4. Написать URL api для получения пени для конкретного кредита
 
 @Getter
-
 @Setter
-
 @Entity
-
 @Table(name = "route", schema = "rm")
-
 public class Route {
 
     @Id
-
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Integer id;
-
     @ManyToMany(fetch = FetchType.LAZY)
-
     @JoinTable(schema = "rm", name = "route_x_kafka_address",
-
     joinColumns = @JoinColumn(name = "route_id", referencedColumnName = "id"),
-
         inverseJoinColumns = @JoinColumn(name = "kafka_address_id", referencedColumnName = "id")
-
     )
-
     private Set<KafkaAddress> kafkaAddresses;
 
 }
