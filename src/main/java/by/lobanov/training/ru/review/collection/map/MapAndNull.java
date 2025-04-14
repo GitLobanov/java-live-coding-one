@@ -13,9 +13,8 @@ public class MapAndNull {
      * Что выведется в консоль?
      */
     public static void main(String[] args) {
-        Map map = new HashMap();
+        HashMap map = new HashMap();
         map.put(null,  null);
-        System.out.println(map.get(null));
         System.out.println(map.containsKey(null));
 
         Set set = new HashSet();

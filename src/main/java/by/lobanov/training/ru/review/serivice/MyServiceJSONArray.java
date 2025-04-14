@@ -8,9 +8,8 @@ import java.util.ArrayList;
 
 public class MyServiceJSONArray {
 
-    /**
-     * Провести код ревью
-     */
+    /*
+     Провести код ревью
     @Service
     @Slf4j
     public class MyService {
@@ -36,4 +35,5 @@ public class MyServiceJSONArray {
             return "";
         }
     }
+     */
 }

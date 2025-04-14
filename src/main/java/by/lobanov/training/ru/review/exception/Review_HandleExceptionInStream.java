@@ -1,5 +1,7 @@
 package by.lobanov.training.ru.review.exception;
 
+import java.util.Arrays;
+
 /**
  * Нужно понять как лучше обратать ошибку в
  * .filter(this::isMoreThanTwo)
@@ -8,7 +10,7 @@ public class Review_HandleExceptionInStream {
 
 //    public int[] filterArray() {
 //        return Arrays.stream(new int[]{1, 2, 3})
-//                //.filter(this::isMoreThanTwo)
+//                .filter(this::isMoreThanTwo)
 //                .toArray();
 //    }
 

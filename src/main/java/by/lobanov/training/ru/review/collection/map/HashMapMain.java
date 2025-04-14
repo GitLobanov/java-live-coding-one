@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class HashMapMain {
 
+    /**
+     * Что выведется в консоль?
+     */
     public static void main(String[] args) {
         Map<SomeKey, String> test = new HashMap<>();
 
@@ -15,15 +18,12 @@ public class HashMapMain {
         test.put(key2, "secondValue");
 
         System.out.println(test.get(key1));
-        // firstValue
 
         SomeKey key3 = new SomeKey("secondKey");
         System.out.println(test.get(key3));
-        // secondValue
 
         key2.value = "";
         System.out.println(test.get(key2));
-        // secondValue
     }
 }
 
@@ -53,5 +53,4 @@ class SomeKey {
                 "value='" + value + '\'' +
                 '}';
     }
-
 }
