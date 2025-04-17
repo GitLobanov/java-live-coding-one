@@ -23,7 +23,7 @@ public class ru_ValidPhoneNumberRegex {
 
 
     public static boolean solutionValidate (String phoneNumber) {
-        // ((123)_ or 123-)456-7890
+        // ((123)_ or 123-456-7890
         String regex = "^(?:\\(\\d{3}\\)\\s|\\d{3}-)\\d{3}-\\d{4}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(phoneNumber);
