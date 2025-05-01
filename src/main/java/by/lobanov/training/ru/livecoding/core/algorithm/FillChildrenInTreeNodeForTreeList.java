@@ -57,11 +57,10 @@ public class FillChildrenInTreeNodeForTreeList {
     public List<Node> someMethodOptimized() {
         List<Node> treeList = getList();
         Map<Long, Node> nodeMap = treeList.stream()
-                .map(el -> {
-                    el.children = new ArrayList<>();
-                    return el;
-                })
-                .collect(Collectors.toMap(node -> node.id, node -> node));
+                .collect(Collectors.toMap(node -> node.id, node -> {
+                    node.children = new ArrayList<>();
+                    return node;
+                }));
 
         for (Node node : treeList) {
             if (node.parentId != null) {

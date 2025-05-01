@@ -1,6 +1,7 @@
 package by.lobanov.training.demos.demo20;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,25 +9,36 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class TestMain {
 
-    public interface IOne {
-        int doAction(String param);
+    static class Parent {
+
+        public int age = 50;
+
+        public void method() {
+            System.out.println("parent method work");
+        }
+
+        public void printAge() {
+            System.out.println(age);
+        }
     }
 
-    public interface ITwo {
-        int doAction(String param);
-    }
-
-    static class OneTwo implements IOne, ITwo {
+    static class Child extends Parent {
+        public int age = 20;
 
         @Override
-        public int doAction(String param) {
-            return 21;
+        public void method() {
+            System.out.println("child method work");
         }
 
-        public static void main(String[] args) {
-            var oneTwo = new OneTwo();
-            var result = oneTwo.doAction("param-value");
-            System.out.println(result);
+        @Override
+        public void printAge() {
+            System.out.println(age);
         }
+    }
+
+    public static void main(String[] args) {
+        Parent object = new Child();
+        object.method();
+        object.printAge();
     }
 }
