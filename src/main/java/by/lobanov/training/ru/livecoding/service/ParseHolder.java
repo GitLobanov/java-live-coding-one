@@ -1,4 +1,4 @@
-package by.lobanov.training.demos.demo19;
+package by.lobanov.training.ru.livecoding.service;
 
 // в метод parse передается строка вида key1=val1;key2=val2;key2=val3... и нужно это все упаковать
 // каким то образом чтобы getRecord возвращала начальную строку
@@ -6,9 +6,6 @@ package by.lobanov.training.demos.demo19;
 // getRecord - кэшируем строку в методе parse в переменную String и возвращаем
 // 1 доп - Сделать так, чтобы могли храниться дубликаты значений (решал через HashMap<String, String> переделал -> HashMap<String, List<String>>)
 // 2 доп сделать класс иммутабельным (метод parse = конструктор и все вспомогательные поля private final геттеры не создавать)
-
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -43,5 +40,4 @@ public class ParseHolder {
         System.out.println(parseHolder.getRecord());
         System.out.println(String.format("value for key1 is %s", parseHolder.getValue("key1")));
     }
-
 }
