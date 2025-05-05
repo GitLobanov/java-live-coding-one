@@ -100,7 +100,7 @@ public class D1_SpringTransaction {
     public void neverExample(String user) {
         /**
          * if (isExistingTransaction()) {
-         *     throw IllegalTransactionStateException;
+         *     throw IllegalTransactionStateException;En
          * }
          * return emptyTransaction;
          */

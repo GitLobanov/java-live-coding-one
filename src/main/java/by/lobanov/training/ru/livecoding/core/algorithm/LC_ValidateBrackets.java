@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.livecoding.core;
+package by.lobanov.training.ru.livecoding.core.algorithm;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Stack;
-
 
 /*
 Задача: Валидация скобочных последовательностей
@@ -25,7 +24,7 @@ import java.util.Stack;
 Вход: "{[]}"   → true
 */
 @Slf4j
-public class LC_ru_ValidateBrackets {
+public class LC_ValidateBrackets {
 
     static Map<Character, Character> map = new HashMap<>();
 
