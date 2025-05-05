@@ -18,7 +18,7 @@ import java.util.Set;
 5. Вернуть один элемент в списке
 6. Какая сложность будет подходить если нужно вернуть все возможные вхождения (несколько элементов)
  */
-public class FindAInListByBestAlgo {
+public class LC_FindAInListByBestAlgo {
 
     @AllArgsConstructor
     public static class A {
@@ -89,7 +89,7 @@ public class FindAInListByBestAlgo {
                 new A(30, "t")
         );
 
-        FindAInListByBestAlgo solution = new FindAInListByBestAlgo();
+        LC_FindAInListByBestAlgo solution = new LC_FindAInListByBestAlgo();
         List<A> result = solution.findA(list);
 
         if (result != null) {

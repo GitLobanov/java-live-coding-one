@@ -7,7 +7,7 @@ import java.util.StringJoiner;
 //Нужно написать метод, который переворачивает значение Integer:
 //120 -> 21
 //351 -> 153
-public class ReverseInteger {
+public class LC_ReverseInteger {
 
     public static void main(String[] args) {
         System.out.println(reverse1(123));

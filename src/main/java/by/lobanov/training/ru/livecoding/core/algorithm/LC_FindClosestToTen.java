@@ -3,7 +3,7 @@ package by.lobanov.training.ru.livecoding.core.algorithm;
 
 import java.util.TreeSet;
 
-public class FindClosestToTen {
+public class LC_FindClosestToTen {
 
     public static void main(String[] args) {
         System.out.println(findClosestToTen(new int[]{-15, -35, 200, 29, 78}));

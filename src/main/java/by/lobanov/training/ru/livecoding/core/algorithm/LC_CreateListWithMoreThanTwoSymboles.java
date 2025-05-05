@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CreateListWithMoreThanTwoSymboles {
+public class LC_CreateListWithMoreThanTwoSymboles {
 
     /**
      * Дан список строк {"a", "bb", "ccc", "dddd"}. Создайте новый список, содержащий только строки

@@ -9,7 +9,7 @@ package by.lobanov.training.ru.livecoding.core.algorithm;
  * Массив array {"dog","racecar","car"}
  * Самый длинный общий префикс -> ""
  */
-public class LongestCommonPrefix {
+public class LC_LongestCommonPrefix {
 
     private static String solution(String[] strs) {
         if (strs == null || strs.length == 0) {

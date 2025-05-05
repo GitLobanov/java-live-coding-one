@@ -8,7 +8,7 @@ import java.util.Arrays;
  *
  * - без использования коллекций и стримов
  */
-public class RemoveDuplicatesInSortedArray {
+public class LC_RemoveDuplicatesInSortedArray {
 
     public void removeDuplicates(int[] nums) {
         if(nums == null || nums.length == 0){
@@ -53,7 +53,7 @@ public class RemoveDuplicatesInSortedArray {
     }
 
     public static void main(String[] args) {
-        RemoveDuplicatesInSortedArray remove = new RemoveDuplicatesInSortedArray();
+        LC_RemoveDuplicatesInSortedArray remove = new LC_RemoveDuplicatesInSortedArray();
         int [] array1 = new int[]{1,1,2,2,3,3,6,7};
         int [] array2 = new int[]{1,1,2,2,3,3,6,7};
         remove.removeDuplicates(array1);

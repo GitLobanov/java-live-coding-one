@@ -3,7 +3,7 @@ package by.lobanov.training.ru.livecoding.core.algorithm;
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class PathNormalizer {
+public class LC_PathNormalizer {
 
     // Перемещение по каталогам в терминале (команда сd)
     // Необходимо "нормализировать" введенный путь, избавившись от . и .., приведя путь к конечному (команда pwd)

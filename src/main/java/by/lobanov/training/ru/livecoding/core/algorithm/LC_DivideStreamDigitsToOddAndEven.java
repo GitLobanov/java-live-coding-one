@@ -1,13 +1,12 @@
 package by.lobanov.training.ru.livecoding.core.algorithm;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class DivideStreamDigitsToOddAndEven {
+public class LC_DivideStreamDigitsToOddAndEven {
 
     public static void main(String[] args) {
         streamUseCaseOddsEvens();

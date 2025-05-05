@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /*
 1. Заполнить поле children у каждого объекта в списке treeList.
  */
-public class FillChildrenInTreeNodeForTreeList {
+public class LC_FillChildrenInTreeNodeForTreeList {
 
     @RequiredArgsConstructor()
     @ToString
@@ -78,7 +78,7 @@ public class FillChildrenInTreeNodeForTreeList {
     }
 
     public static void main(String[] args) {
-        FillChildrenInTreeNodeForTreeList fill = new FillChildrenInTreeNodeForTreeList();
+        LC_FillChildrenInTreeNodeForTreeList fill = new LC_FillChildrenInTreeNodeForTreeList();
         List<Node> list = fill.someMethodOptimized();
         for (Node node : list) {
             System.out.println("Node ID: " + node.id + ", Children: " + node.children.size());
