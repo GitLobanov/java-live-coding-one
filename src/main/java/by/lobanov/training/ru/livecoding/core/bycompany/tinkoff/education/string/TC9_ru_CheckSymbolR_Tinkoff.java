@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.string;
+package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.education.string;
 
 import java.io.BufferedReader;
 import java.io.IOException;

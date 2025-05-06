@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ParseHolder {
+public class LC_ParseHolder {
 
     private Map<String, String> map = new HashMap<>();
     private String record;
@@ -35,7 +35,7 @@ public class ParseHolder {
     }
 
     public static void main(String[] args) {
-        ParseHolder parseHolder = new ParseHolder();
+        LC_ParseHolder parseHolder = new LC_ParseHolder();
         parseHolder.parse("key1=val1;key2=val2;key2=val3");
         System.out.println(parseHolder.getRecord());
         System.out.println(String.format("value for key1 is %s", parseHolder.getValue("key1")));

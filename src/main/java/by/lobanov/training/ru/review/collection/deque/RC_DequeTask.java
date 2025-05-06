@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class DequeTask {
+public class RC_DequeTask {
 
     private Deque<String> deque = new ArrayDeque<>();
     public void method () {
@@ -20,7 +20,7 @@ public class DequeTask {
 
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(4);
-        DequeTask task = new DequeTask(); // Один экземпляр для всех потоков
+        RC_DequeTask task = new RC_DequeTask(); // Один экземпляр для всех потоков
 
         for (int i = 0; i < 4; i++) {
             executor.submit(task::method);

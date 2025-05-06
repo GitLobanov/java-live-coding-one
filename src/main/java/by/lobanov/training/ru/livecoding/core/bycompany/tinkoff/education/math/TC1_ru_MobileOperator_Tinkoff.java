@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.math;
+package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.education.math;
 
 import java.util.Arrays;
 import java.util.Scanner;

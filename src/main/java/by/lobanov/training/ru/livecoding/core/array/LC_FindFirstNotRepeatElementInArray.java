@@ -10,7 +10,7 @@ import static java.util.stream.Collectors.groupingBy;
 /*
 Найти первый неповторяющийся элемент в массиве
  */
-public class FindFirstNotRepeatElementInArray {
+public class LC_FindFirstNotRepeatElementInArray {
 
     public static void main(String[] args) {
         int[] nums = {2, 3, 4, 2, 3, 5, 4};

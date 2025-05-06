@@ -13,7 +13,7 @@ import java.util.Map;
  * The output should be [0, 1].
  * Because nums[0]+nums[1] 2+7=9.
  */
-public class FindSumOfTwoInNotSortedArray {
+public class LC_FindSumOfTwoInNotSortedArray {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(findTwoOfSum(new int[]{2, 1, 4, 2, 6}, 6)));

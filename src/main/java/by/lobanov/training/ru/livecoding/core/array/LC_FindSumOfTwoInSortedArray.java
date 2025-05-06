@@ -5,7 +5,7 @@ import java.util.Arrays;
 /*
 Найти 2 элемента упорядоченного массива, сумма которых равна заданному числу
  */
-public class FindSumOfTwoInSortedArray {
+public class LC_FindSumOfTwoInSortedArray {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(findSumOfTwo(new int[]{0, 1, 3, 4, 5, 6}, 5)));

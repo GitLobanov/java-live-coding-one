@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff;
+package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.education;
 
 import java.util.ArrayList;
 import java.util.Collections;

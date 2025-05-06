@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.math;
+package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.education.math;
 
 import java.util.Scanner;
 import java.util.stream.IntStream;

@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff;
+package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.education;
 
 /**
  * В этом году главой Флатландии является Егор. Всего во Флатландии проживает n людей, каждый в своем доме. i-й дом находится в целочисленной точке (xi,yi).
