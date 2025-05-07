@@ -1,4 +1,4 @@
-package by.lobanov.training.ru.livecoding.core.sort;
+package by.lobanov.training.ru.livecoding.core.bycompany.tinkoff.education;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -21,7 +21,7 @@ import java.util.TreeMap;
  * Example:
  * 1986 -> MCMLXXXVI
  */
-public class TC18_ru_IntegerToRomanSymbols_LC {
+public class LC_IntegerToRomanSymbols {
 
     private static TreeMap<Integer, String> map = new TreeMap<>();
     // TODO need assign number and roman symb in map

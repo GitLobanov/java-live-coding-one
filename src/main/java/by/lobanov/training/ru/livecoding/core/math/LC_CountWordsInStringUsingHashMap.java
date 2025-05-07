@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 // Напишите программу для подсчета количества конкретных слов в строке, используя HashMap.
-public class TC20_ru_CountWordsInStringUsingHashMap_LC {
+public class LC_CountWordsInStringUsingHashMap {
 
 
     public static void main(String[] args) {
